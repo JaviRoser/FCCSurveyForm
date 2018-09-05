@@ -1,0 +1,15 @@
+@media screen and (max-width: 450px) {
+  .canvasProperties {
+    padding: 2em 0 2em 0;
+    line-height: 2em;
+  }
+  /*
+Choose Grid Size and Pick a color 
+*/
+  .col-md-6 {
+    padding: 0.5em 0 0.5em 0;
+  }
+  .col-md-12 {
+    padding-top: 2em;
+  }
+}
