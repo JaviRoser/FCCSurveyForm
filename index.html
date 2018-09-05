@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FreeCode Camp Survey Form</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -19,78 +19,81 @@
         <p>Let us know how we can improve FreeCodeCamp</p>
     </section>
     <main>
-        <form id="survey-form">
-            <div>
-                <label for="name" id="name-label">Name:</label>
-                <input type="text" id="name" name="" placeholder="Enter your name">
-            </div>
-            <div>
-                <label for="mail" id="email-label">E-mail:</label>
-                <input type="email" id="email" name="" placeholder="Enter your Email">
-            </div>
-            <div>
-                <label for="age" id="number-label">Age:</label>
-                <input type="number" id="number" name="" placeholder="Age">
-            </div>
-            <div>
-                <label>Which option best describes your current role?</label>
-                <select id="dropdown" name="role">
-                    <option value="student">Student</option>
-                    <option value="full-time-job">Full time job</option>
-                    <option value="full-time-learner">Full time learner</option>
-                    <option value="prefer not to say">Prefer not to say</option>
-                    <option value="other">Other </option>
-                </select>
-            </div>
-            <div>
-                <label> How likely is that you would recommend freeCodeCamp to a friend?</label>
-                <input type="radio" name="recommendation" value="definitely "> Definitely
-                <br>
-                <input type="radio" name="recommendation" value="maybe ">Maybe
-                <br>
-                <input type="radio" name="recommendation" value="not-sure "> Not sure
-            </div>
-            <div>
-                <label> What do you like most in FCC:</label>
-                <select id="dropdown " name="">
-                    <option value="select-an-option" selected="true" disabled="disabled">Select an option</option>
-                    <option value="challenges">Challenges</option>
-                    <option value="projects">Projects</option>
-                    <option value="community">Community</option>
-                    <option value="open-source">Open source</option>
-                </select>
-            </div>
-            <div>
-                <label> Things that should be improved in the future (Check all that apply):</label>
-                <input type="checkbox" id="checkbox-form" name="feature" value="front-end-projects" /> Front-end Projects
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="back-end-projects" /> Back-end Projects
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="data visuzlization" /> Data Visuzlization
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="challenges" /> Challenges
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="Opegitter help Rooms" /> Open Source Community
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="gitter-help-rooms" /> Gitter help Rooms
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="videos" /> Videos
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="city-meetups" /> City Meetups
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="wiki" /> Wiki
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="forum" /> Forum
-                <br>
-                <input type="checkbox" id="checkbox-form" name="feature" value="additional-courses" /> Additional Courses
-                <br>
-            </div>
-            <div>
-                <label> Any Comment or suggestions</label>
-                <textarea id="">Enter your comment here...</textarea>
-            </div>
-            <button id="submit">Submit</button>
-        </form>
+        <div class="form-container">
+            <form id="survey-form">
+                <div class="row">
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" id="name" name="" placeholder="Enter your name">
+                </div>
+                <div class="row">
+                    <label for="mail" id="email-label">E-mail:</label>
+                    <input type="email" id="email" name="" placeholder="Enter your Email">
+                </div>
+                <div class="row">
+                    <label for="age" id="number-label">Age:</label>
+                    <input type="number" id="number" name="" placeholder="Age">
+                </div>
+                <div class="row">
+                    <label>Which option best describes your current role?</label>
+                    <select id="dropdown" name="role">
+                        <option value="student">Student</option>
+                        <option value="full-time-job">Full time job</option>
+                        <option value="full-time-learner">Full time learner</option>
+                        <option value="prefer not to say">Prefer not to say</option>
+                        <option value="other">Other </option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label> How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    <input type="radio" name="recommendation" value="definitely "> Definitely
+                    <br>
+                    <input type="radio" name="recommendation" value="maybe ">Maybe
+                    <br>
+                    <input type="radio" name="recommendation" value="not-sure "> Not sure
+                </div>
+                <div class="row">
+                    <label> What do you like most in FCC:</label>
+                    <select id="dropdown " name="">
+                        <option value="select-an-option" selected="true" disabled="disabled">Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open-source">Open source</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label> Things that should be improved in the future (Check all that apply):</label>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="front-end-projects" /> Front-end Projects
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="back-end-projects" /> Back-end Projects
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="data visuzlization" /> Data Visuzlization
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="challenges" /> Challenges
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="Opegitter help Rooms" /> Open Source Community
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="gitter-help-rooms" /> Gitter help Rooms
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="videos" /> Videos
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="city-meetups" /> City Meetups
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="wiki" /> Wiki
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="forum" /> Forum
+                    <br>
+                    <input type="checkbox" id="checkbox-form" name="feature" value="additional-courses" /> Additional Courses
+                    <br>
+                </div>
+                <div class="row">
+                    <label> Any Comment or suggestions</label>
+                    <textarea id="">Enter your comment here...</textarea>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        <!---End of Container-->
     </main>
     <footer>
         <p>Designed by Carlos Sanchez</p>
