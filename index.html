@@ -15,80 +15,112 @@
     <header id="title">
         <h1>Survey Form</h1>
     </header>
-    <section id="description">
-        <p>Let us know how we can improve FreeCodeCamp</p>
-    </section>
-    <main>
+    <main id="form-content">
         <div class="form-container">
             <form id="survey-form">
+                       <section id="description">
+            <p >Let us know how we can improve FreeCodeCamp</p>
+        </section>
                 <div class="row">
-                    <label for="name" id="name-label">Name:</label>
-                    <input type="text" id="name" name="" placeholder="Enter your name">
+                    <div class="column">
+                        <label for="name" id="name-label">Name:</label>
+                    </div>
+                    <div class="column">
+                        <input type="text" id="name" name="" placeholder="Enter your name">
+                    </div>
                 </div>
                 <div class="row">
-                    <label for="mail" id="email-label">E-mail:</label>
-                    <input type="email" id="email" name="" placeholder="Enter your Email">
+                    <div class="column">
+                        <label for="mail" id="email-label">E-mail:</label>
+                    </div>
+                    <div class="column">
+                        <input type="email" id="email" name="" placeholder="Enter your Email">
+                    </div>
                 </div>
                 <div class="row">
-                    <label for="age" id="number-label">Age:</label>
-                    <input type="number" id="number" name="" placeholder="Age">
+                    <div class="column">
+                        <label for="age" id="number-label">Age:</label>
+                    </div>
+                    <div class="column">
+                        <input type="number" id="number" name="" placeholder="Age">
+                    </div>
                 </div>
                 <div class="row">
-                    <label>Which option best describes your current role?</label>
-                    <select id="dropdown" name="role">
-                        <option value="student">Student</option>
-                        <option value="full-time-job">Full time job</option>
-                        <option value="full-time-learner">Full time learner</option>
-                        <option value="prefer not to say">Prefer not to say</option>
-                        <option value="other">Other </option>
-                    </select>
+                    <div class="column">
+                        <label>Which option best describes your current role?</label>
+                    </div>
+                    <div class="column">
+                        <select id="dropdown" name="role">
+                            <option value="student">Student</option>
+                            <option value="full-time-job">Full time job</option>
+                            <option value="full-time-learner">Full time learner</option>
+                            <option value="prefer not to say">Prefer not to say</option>
+                            <option value="other">Other </option>
+                        </select>
+                    </div>
                 </div>
                 <div class="row">
-                    <label> How likely is that you would recommend freeCodeCamp to a friend?</label>
-                    <input type="radio" name="recommendation" value="definitely "> Definitely
-                    <br>
-                    <input type="radio" name="recommendation" value="maybe ">Maybe
-                    <br>
-                    <input type="radio" name="recommendation" value="not-sure "> Not sure
+                    <div class="column">
+                        <label> How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    </div>
+                    <div class="column">
+                        <input type="radio" name="recommendation" value="definitely"> Definitely
+                        <br>
+                        <input type="radio" name="recommendation" value="maybe">Maybe
+                        <br>
+                        <input type="radio" name="recommendation" value="not-sure "> Not sure
+                    </div>
                 </div>
                 <div class="row">
-                    <label> What do you like most in FCC:</label>
-                    <select id="dropdown " name="">
-                        <option value="select-an-option" selected="true" disabled="disabled">Select an option</option>
-                        <option value="challenges">Challenges</option>
-                        <option value="projects">Projects</option>
-                        <option value="community">Community</option>
-                        <option value="open-source">Open source</option>
-                    </select>
+                    <div class="column">
+                        <label> What do you like most in FCC:</label>
+                    </div>
+                    <div class="column">
+                        <select id="dropdown " name="">
+                            <option value="select-an-option" selected="true" disabled="disabled">Select an option</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="open-source">Open source</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="row">
-                    <label> Things that should be improved in the future (Check all that apply):</label>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="front-end-projects" /> Front-end Projects
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="back-end-projects" /> Back-end Projects
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="data visuzlization" /> Data Visuzlization
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="challenges" /> Challenges
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="Opegitter help Rooms" /> Open Source Community
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="gitter-help-rooms" /> Gitter help Rooms
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="videos" /> Videos
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="city-meetups" /> City Meetups
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="wiki" /> Wiki
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="forum" /> Forum
-                    <br>
-                    <input type="checkbox" id="checkbox-form" name="feature" value="additional-courses" /> Additional Courses
-                    <br>
+                    <div class="column">
+                        <label> Things that should be improved in the future (Check all that apply):</label>
+                    </div>
+                    <div class="column">
+                        <input type="checkbox" id="checkbox-form" name="feature" value="front-end-projects" /> Front-end Projects
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="back-end-projects" /> Back-end Projects
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="data visuzlization" /> Data Visuzlization
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="challenges" /> Challenges
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="Opegitter help Rooms" /> Open Source Community
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="gitter-help-rooms" /> Gitter help Rooms
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="videos" /> Videos
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="city-meetups" /> City Meetups
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="wiki" /> Wiki
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="forum" /> Forum
+                        <br>
+                        <input type="checkbox" id="checkbox-form" name="feature" value="additional-courses" /> Additional Courses
+                        <br>
+                    </div>
                 </div>
                 <div class="row">
-                    <label> Any Comment or suggestions</label>
-                    <textarea id="">Enter your comment here...</textarea>
+                    <div class="column">
+                        <label> Any Comment or suggestions</label>
+                    </div>
+                    <div class="column">
+                        <textarea id="">Enter your comment here...</textarea>
+                    </div>
                 </div>
                 <button id="submit">Submit</button>
             </form>
