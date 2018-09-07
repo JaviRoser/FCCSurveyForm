@@ -1,15 +1,21 @@
+<!-- Responsive Web Design Projects - Survey Form
+  September 6,2018
+  Designed by Carlos Sanchez-->
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="Project Description" content="Survey Form">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FreeCode Camp Survey Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Kaushan+Script|Marck+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!--To test project-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
+<title>FreeCode Camp Survey Form</title>
 
 <body>
     <header id="title">
@@ -18,9 +24,9 @@
     <main id="form-content">
         <div class="form-container">
             <form id="survey-form">
-                       <section id="description">
-            <p >Let us know how we can improve FreeCodeCamp</p>
-        </section>
+                <section id="description">
+                    <p>Let us know how we can improve FreeCodeCamp</p>
+                </section>
                 <div class="row">
                     <div class="column">
                         <label for="name" id="name-label">Name:</label>
@@ -42,7 +48,7 @@
                         <label for="age" id="number-label">Age:</label>
                     </div>
                     <div class="column">
-                        <input type="number" id="number" name="" placeholder="Age">
+                        <input type="number" id="age" name="" placeholder="Age">
                     </div>
                 </div>
                 <div class="row">
@@ -66,7 +72,7 @@
                     <div class="column">
                         <input type="radio" name="recommendation" value="definitely"> Definitely
                         <br>
-                        <input type="radio" name="recommendation" value="maybe">Maybe
+                        <input type="radio" name="recommendation" value="maybe"> Maybe
                         <br>
                         <input type="radio" name="recommendation" value="not-sure "> Not sure
                     </div>
@@ -119,16 +125,18 @@
                         <label> Any Comment or suggestions</label>
                     </div>
                     <div class="column">
-                        <textarea id="">Enter your comment here...</textarea>
+                        <textarea id="comments">Enter your comment here...</textarea>
                     </div>
                 </div>
-                <button id="submit">Submit</button>
+                <div class="submit-button">
+                    <button id="submit">Submit</button>
+                </div>
             </form>
         </div>
         <!---End of Container-->
     </main>
     <footer>
-        <p>Designed by Carlos Sanchez</p>
+        <p>Designed by <span>Carlos Sanchez</span></p>
     </footer>
 </body>
 

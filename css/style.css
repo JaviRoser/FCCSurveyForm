@@ -11,6 +11,7 @@ body {
 
 
 
+
 /* Style the title and description */
 
 #title,
@@ -26,24 +27,76 @@ body {
 }
 
 
+
+
+
+
 /*Color and size of the form*/
 
 .form-container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-    width: 650px;
+    width: 850px;
     line-height: 1.5em;
 }
 
+
+
+
+
+/*name, email, age and questions*/
 
 label {
     display: block;
     text-align: right;
 }
 
+#name-label,
+#email-label,
+#number-label {
+    padding-top: 0.5em;
+}
 
 
+
+
+
+/*Input boxes*/
+
+#name,
+#email,
+#age,
+select {
+    width: 200px;
+    height: 40px;
+    padding: 0.5em;
+}
+
+
+
+
+/* Submit Button*/
+
+button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+
+
+/*Textarea */
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
 
 
 
@@ -53,10 +106,6 @@ label {
     display: -webkit-flex;
     display: flex;
 }
-
-
-
-
 
 
 
@@ -78,32 +127,25 @@ label {
 
 
 
-/* Submit Button*/
-
-button {
-    margin-left: auto;
-    padding: 8px 16px;
-    border: none;
-    background: #333;
-    color: #f2f2f2;
-    text-transform: uppercase;
-    letter-spacing: .09em;
-    border-radius: 2px;
-}
-
-
 
 
 
 
 /* Style the footer */
 
-.footer {
-    background-color: #f1f1f1;
-    padding: 10px;
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 2em;
     text-align: center;
 }
 
+/*Style My name*/
+span {
+    font-family: 'Marck Script', cursive;
+    font-size: 1.6em;
+}
 
 
 
