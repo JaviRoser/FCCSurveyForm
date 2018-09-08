@@ -12,9 +12,20 @@
     .submit-button {
         text-align: center;
     }
+        .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
-
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/*
+@media (max-width: 600px) {
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}*/
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {

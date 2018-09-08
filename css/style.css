@@ -1,3 +1,18 @@
+/*Color
+
+--main-color#2d4059;
+
+*/
+
+/*Allow to change the color where the color variable is*/
+:root{
+--main-color:#2d4059;
+--secondary-color:#ffb400;
+--ternary-color:#f6f6f6;
+--four-color:#ea5455;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -5,8 +20,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 /* Style the title and description */
 
@@ -24,15 +37,15 @@ body {
 }
 
 
+
 /*Color and size of the form*/
 
 .form-container {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
-    width: 850px;
+    width: 800px;
     line-height: 1.5em;
-    background-color: #2d4059;
+    background-color: var(--main-color);
     color: #f6f6f6;
 }
 
@@ -60,7 +73,16 @@ select {
     width: 200px;
     height: 40px;
     padding: 0.5em;
+    box-sizing: border-box;
+    margin: 2px 0;
+    border: none;
 }
+
+input[type=text] {
+    background-color: #f6f6f6;
+    color: var(--main-color);
+}
+
 
 /*input:invalid {
     border: 2px solid #ea5455;
@@ -70,7 +92,7 @@ select {
 /* Submit Button*/
 
 button {
-    margin-left: auto;
+    margin: 4px 2px;
     padding: 8px 16px;
     border: none;
     background: #ffb400;
@@ -79,12 +101,13 @@ button {
     letter-spacing: .09em;
     border-radius: 4px;
     font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .submit-button {
     text-align: center;
 }
-
 
 
 /*Comments Textarea */
@@ -95,19 +118,12 @@ textarea {
 }
 
 
-
-
-
 /* Container for flexboxes */
 
 .row {
     display: -webkit-flex;
     display: flex;
 }
-
-
-
-
 
 
 /* Create three equal columns that sits next to each other */
@@ -117,14 +133,7 @@ textarea {
     -ms-flex: 1;
     flex: 1;
     padding: 10px;
-
-    /* height: 300px; */
-    /* Should be removed. Only for demonstration */
 }
-
-
-
-
 
 /* Style the footer */
 
@@ -137,8 +146,7 @@ footer {
 }
 
 
-
-/*Style My name*/
+/*Style My name at the footer*/
 
 span {
     font-family: 'Marck Script', cursive;
@@ -147,17 +155,3 @@ span {
 
 
 
-
-
-
-
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
-@media (max-width: 600px) {
-    .row {
-        -webkit-flex-direction: column;
-        flex-direction: column;
-    }
-}
