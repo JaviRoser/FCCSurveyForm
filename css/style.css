@@ -8,10 +8,6 @@ body {
 
 
 
-
-
-
-
 /* Style the title and description */
 
 #title,
@@ -20,15 +16,12 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 #description {
     text-align: center;
 }
-
-
-
-
 
 
 /*Color and size of the form*/
@@ -39,10 +32,9 @@ body {
     padding: 20px;
     width: 850px;
     line-height: 1.5em;
+    background-color: #2d4059;
+    color: #f6f6f6;
 }
-
-
-
 
 
 /*name, email, age and questions*/
@@ -59,9 +51,6 @@ label {
 }
 
 
-
-
-
 /*Input boxes*/
 
 #name,
@@ -73,7 +62,9 @@ select {
     padding: 0.5em;
 }
 
-
+/*input:invalid {
+    border: 2px solid #ea5455;
+}*/
 
 
 /* Submit Button*/
@@ -82,21 +73,28 @@ button {
     margin-left: auto;
     padding: 8px 16px;
     border: none;
-    background: #333;
-    color: #f2f2f2;
+    background: #ffb400;
+    color: #2d4059;
     text-transform: uppercase;
     letter-spacing: .09em;
-    border-radius: 2px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.submit-button {
+    text-align: center;
 }
 
 
 
-/*Textarea */
+/*Comments Textarea */
 
 textarea {
     width: 300px;
     height: 100px;
 }
+
+
 
 
 
@@ -106,6 +104,8 @@ textarea {
     display: -webkit-flex;
     display: flex;
 }
+
+
 
 
 
@@ -126,11 +126,6 @@ textarea {
 
 
 
-
-
-
-
-
 /* Style the footer */
 
 footer {
@@ -141,11 +136,16 @@ footer {
     text-align: center;
 }
 
+
+
 /*Style My name*/
+
 span {
     font-family: 'Marck Script', cursive;
     font-size: 1.6em;
 }
+
+
 
 
 

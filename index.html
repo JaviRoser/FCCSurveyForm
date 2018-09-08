@@ -9,7 +9,7 @@
     <meta name="Project Description" content="Survey Form">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Handlee|Kaushan+Script|Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!--To test project-->
@@ -18,21 +18,19 @@
 <title>FreeCode Camp Survey Form</title>
 
 <body>
-    <header id="title">
-        <h1>Survey Form</h1>
+    <header >
+        <h1 id="title">Survey Form</h1>
     </header>
     <main id="form-content">
         <div class="form-container">
             <form id="survey-form">
-                <section id="description">
-                    <p>Let us know how we can improve FreeCodeCamp</p>
-                </section>
+                <p id="description">Let us know how we can improve FreeCodeCamp</p>
                 <div class="row">
                     <div class="column">
                         <label for="name" id="name-label">Name:</label>
                     </div>
                     <div class="column">
-                        <input type="text" id="name" name="" placeholder="Enter your name">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off" required>
                     </div>
                 </div>
                 <div class="row">
@@ -40,7 +38,7 @@
                         <label for="mail" id="email-label">E-mail:</label>
                     </div>
                     <div class="column">
-                        <input type="email" id="email" name="" placeholder="Enter your Email">
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" autocomplete="off"  size="64" maxLength="64"required >
                     </div>
                 </div>
                 <div class="row">
@@ -48,7 +46,7 @@
                         <label for="age" id="number-label">Age:</label>
                     </div>
                     <div class="column">
-                        <input type="number" id="age" name="" placeholder="Age">
+                        <input type="number" id="age" name="age" placeholder="Age" autocomplete="off" min="18" max="100"required>
                     </div>
                 </div>
                 <div class="row">
